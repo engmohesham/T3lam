@@ -1,0 +1,161 @@
+/* العناوين */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    margin: 0;
+    }
+    
+    /* العنصر الأساسي */
+    body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    }
+    
+    /* هيدر */
+    #header {
+    background-color: #459fd3;
+    color: #fff;
+    text-align: center;
+    padding: 50px;
+    position: relative;
+    margin-top: 50px;
+    }
+    
+    #header h1 {
+    margin-top: 0;
+    }
+    
+    #header img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 20px auto;
+    display: block;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+    
+    /* انتقالات */
+    #contact, #specialties, #bio {
+    opacity: 0;
+    transform: translateY(50px);
+    animation-name: fadein;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+    }
+    
+    @keyframes fadein {
+    to {
+    opacity: 1;
+    transform: translateY(0);
+    }
+    }
+    
+    /* معلومات الاتصال */
+    #contact, #specialties, #bio {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    #contact h2, #specialties h2, #bio h2 {
+    color: #0077be;
+    font-size: 24px;
+    margin-bottom: 10px;
+    }
+    
+    #contact p, #specialties ul, #specialties li, #bio p {
+    margin: 10px 0;
+    font-size: 16px;
+    line-height: 1.5;
+    }
+    
+    /* التخصصات */
+    #specialties ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
+    
+    #specialties li {
+    margin: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    }
+    
+    /* فوتر */
+    #footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    }
+    
+    #footer p {
+    margin: 0;
+    font-size: 16px;
+    }
+    
+    /* تحديد أحجام الشاشات */
+    @media (max-width: 768px) {
+    #contact, #specialties, #bio {
+    margin: 20px;
+    padding: 10px;
+    }
+    
+    #header img {
+    width: 100px;
+    height: 100px;
+    }
+    
+    #specialties ul {
+    justify-content: center;
+    }
+    
+    #specialties li {
+    width: 80%;
+    }
+    }
+    
+    /* تنسيق اضافي */
+    .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    }
+    
+    .btn {
+    display: inline-block;
+    background-color: #0077be;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    }
+    
+    .btn:hover {
+    background-color: #005fa3;
+    }
+    
+    /* اضافة خط على الرابط */
+    a {
+    text-decoration: none;
+    border-bottom: 2px solid #0077be;
+    color: #0077be;
+    transition: border-bottom 0.3s ease;
+    }
+    
+    a:hover {
+    border-bottom: 2px solid #005fa3;
+    }
